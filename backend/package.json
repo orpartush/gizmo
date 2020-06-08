@@ -1,0 +1,26 @@
+{
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "A production ready server including REST, Session, Sockets, Mongo and more",
+    "main": "server.js",
+    "scripts": {
+        "server:dev": "NODE_ENV=development nodemon server.js",
+        "server:prod": "node server.js",
+        "start": "node server.js"
+    },
+    "author": "Coding Academy",
+    "license": "ISC",
+    "dependencies": {
+        "bcrypt": "^4.0.1",
+        "body-parser": "^1.19.0",
+        "cookie-parser": "^1.4.5",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "express-session": "^1.17.0",
+        "mongodb": "^3.5.5",
+        "socket.io": "^2.3.0"
+    },
+    "devDependencies": {
+        "nodemon": "1.18.10"
+    }
+}

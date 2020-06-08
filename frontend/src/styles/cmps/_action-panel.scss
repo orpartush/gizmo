@@ -1,0 +1,30 @@
+.action-panel {
+  z-index: 9;
+  right: 0;
+  top: 0;
+  position: absolute;
+  visibility: hidden;
+  
+  
+  .action-container {
+    margin: 0.275rem;
+  }
+
+  button {
+    background-color: #fff;
+    border-radius: rem(4px);
+    align-items: center;
+    padding: 0 rem(6px);
+    color: #20303c;
+    font-size: 0.8rem;
+    font-weight: 500;
+    height: rem(25px);
+    margin-right:0.11rem;
+    border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+    box-shadow: 0 1px rem(7px) 0 rgba(32,48,60,.4);
+    outline: none;
+    &:hover{
+        color: #459fed;
+    }
+  }
+}

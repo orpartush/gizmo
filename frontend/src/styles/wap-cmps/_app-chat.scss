@@ -1,0 +1,142 @@
+.app-chat {
+  max-width: 300px;
+  text-align: start;
+
+  .unopened-chat-container {
+    padding: rem(10px);
+    .unopened-chat-titles {
+      > * {
+        margin: 0.2rem;
+      }
+      .chat-sm-txt {
+        font-size: rem(11px);
+        margin-bottom: 3px;
+
+        span {
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .arrow-icon {
+      font-size: 1.8rem;
+      margin-right: 1rem;
+      border-radius: 999px;
+      transition: 0.3s;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.5);
+      }
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .msgs-container {
+    overflow-y: auto;
+    padding: 5px;
+    margin: 0;
+    min-height: 200px;
+    font-size: 0.8rem;
+    li {
+      padding: 5px;
+      margin: 10px;
+      width: fit-content;
+      margin-left: auto;
+    }
+    .support {
+      margin-left: 10px;
+      margin-right: auto;
+    }
+  }
+
+  .msg-send-container {
+    padding: 5px;
+    input {
+      width: 92%;
+      padding: 5px;
+      padding: top;
+      border: none;
+      outline: none;
+    }
+    .msg-send {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  &.buson-theme {
+    background-color: $clr1;
+    color: $clr2;
+    filter: drop-shadow(0 0 0.75rem rgb(138, 138, 138));
+
+    .unopened-chat-container {
+      background-color: $clr2;
+      color: $clr1;
+    }
+
+    .msgs-container {
+      background-color: $clr1;
+      color: $clr2;
+      li {
+        background-color: lighten($clr1, $amount: 50%);
+      }
+      .support {
+        background-color: lighten($clr1, $amount: 65%);
+      }
+    }
+    .msg-send-container {
+      background-color: $clr1;
+      .msg-send {
+        color: $clr2;
+      }
+    }
+  }
+  &.icy-theme {
+    background-color: $clr7;
+    color: $clr9;
+    border: 1px solid $clr6;
+
+    .unopened-chat-container {
+      background-color: $clr7;
+      color: $clr9;
+    }
+
+    .msgs-container {
+      background-color: $clr8;
+      color: $clr7;
+      li {
+        background-color: lighten($clr10, $amount: 50%);
+      }
+      .support {
+        background-color: lighten($clr10, $amount: 65%);
+      }
+    }
+    .msg-send-container {
+      background-color: $clr1;
+      .msg-send {
+        color: $clr2;
+      }
+    }
+  }
+}
+
+//MEDIA QUEREIS
+@include for-wide-layout {
+  .app-chat {
+    width: 50%;
+  }
+}
+
+@include for-normal-layout {
+  .app-chat {
+    width: 60%;
+  }
+}
+
+@include for-narrow-layout {
+  .app-chat {
+    width: 80%;
+  }
+}

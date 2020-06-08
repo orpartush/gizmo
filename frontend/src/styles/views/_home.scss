@@ -1,0 +1,190 @@
+.home-page {
+  * {
+    font-family: Lato, sans-serif;
+  }
+  .hero {
+    margin-bottom: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(~@/assets/img/main-hero-bg.jpg) no-repeat fixed center;
+    background-size: cover;
+    height: 80vh;
+    p {
+      letter-spacing: 0.04em;
+      margin-top: 20px;
+      text-align: center;
+      color: #ffffff;
+      font-family: Lato, sans-serif;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    .hero-title {
+      color: #ffffff;
+      font-family: Lato, sans-serif;
+      font-weight: bold;
+      font-size: 3rem;
+    }
+    button {
+      padding: 15px;
+      color: #fff;
+      font-family: Lato, sans-serif;
+      background-color: #287BFF;
+      border: none;
+      font-size: 1.5rem;
+      border-radius: 38px;
+      transition: .3s;
+      &:hover {
+        background-color: lighten(#287BFF, 5%);
+      }
+    }
+  }
+  .infos {
+    margin: 0 auto;
+    margin-bottom: 100px;
+    height: 50vh;
+    .info-1, .info-2, .info-3 {
+      height: auto;
+      margin: 20px;
+      text-align: center;
+      h1 {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+      img {
+        max-width: 400px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 980px) {
+    header {
+      .hero-title {
+        width: 90%;
+        text-align: center;
+      }
+      p {
+        width: 90%;
+      }
+    }
+    .infos {
+      img {
+        width: {
+
+        }
+      }
+    }
+  }
+}
+//   header {
+//     height: 75vh;
+//     width: 100%;
+//     img {
+//       margin-right: rem(150px);
+//       width: 600px;
+//     }
+//     div {
+//       margin-top: 100px;
+//       margin-left: 100px;
+
+//       .hero-content {
+//         .title {
+//           font-size: rem(80px);
+//           max-width: rem(740px);
+//           line-height: 1.2em;
+//         }
+//         .sub-title {
+//           margin: 0;
+//           font-size: rem(20px);
+//           line-height: 1.5em;
+//         }
+//         span {
+//           margin-top: 50px;
+//           font-size: 3rem;
+//         }
+//         a {
+//           background-color: rgba(17, 109, 255, 1);
+//           width: fit-content;
+//           padding: rem(15px) rem(40px);
+//           border-radius: rem(38px);
+//           font-size: rem(24px);
+//           color: #fff;
+//           position: relative;
+//           top: rem(45px);
+//           transition: .3s;
+//           &:hover {
+//             cursor: pointer;
+//             opacity: 0.9;
+//           }
+//         }
+//       }
+//     }
+//   }
+//   .explore {
+//     margin-top: 10vh;
+//     height: 60vh;
+//     .templates-title {
+//       max-width: rem(1080px);
+//       margin: 0 auto;
+//       text-align: center;
+//       margin-bottom: 30px;
+//     }
+//     hr {
+//       max-width: rem(540px);
+//       margin: 0 auto;
+//       margin-bottom: 50px;
+//     }
+//     .templates-list {
+//       width: 80%;
+//       margin: 0 auto;
+//     }
+//   }
+// }
+
+// .home-page {
+//   text-align: center;
+//   margin-top: rem(40px);
+//   .title {
+//     font-size: rem(96px);
+//     max-width: rem(740px);
+//     margin: 0 auto;
+//     line-height: 1.2em;
+//     margin-bottom: 10px;
+//   }
+//   .sub-title {
+//     max-width: rem(620px);
+//     margin: 0 auto;
+//     font-size: rem(20px);
+//     line-height: 1.5em;
+//     margin-bottom: 10px;
+//   }
+
+//   a {
+//     background-color: rgba(17, 109, 255, 1);
+//     cursor: pointer;
+//     padding: rem(15px) rem(40px);
+//     border-radius: rem(38px);
+//     font-size: rem(24px);
+//     color: #fff;
+//     position: relative;
+//     top: rem(45px);
+//     &:hover {
+//       opacity: 0.9;
+//     }
+//   }
+//   .show-more-btn{
+//     margin: 0 auto 20px;
+//     height: 50px;
+//     width: 65%;
+//     background: none;
+//     border: 3px solid #dddada;
+//     color: #dddada;
+//     font-size: 1.2rem;
+//     outline: none;
+//     &:hover{
+//       border: 3px solid $clr3;
+//       color: $clr3;
+//     }
+//   }
+// }

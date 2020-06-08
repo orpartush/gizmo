@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+html {
+    color: $main-clr2;
+}
+
+body {
+    margin: 0 auto;
+    font-family: Lato;
+}
+
+h1, h2 {
+    // font-family: GreatVibes, serif;
+    font-size: rem(70px);
+    margin: 0 0 rem(20px);
+    font-weight: normal;
+    line-height: 1;
+}
+
+p {
+    margin: 0 auto 1em;
+    max-width: 48ch;
+}
+
+a {
+    text-decoration: none;
+    color: $clr2;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}

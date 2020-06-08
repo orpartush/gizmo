@@ -1,0 +1,31 @@
+.cmp-preview {
+  flex-wrap: wrap;
+  position: relative;
+  * {
+    word-break: break-all;
+    font-family: Lato, sans-serif;
+  }
+  .screen {
+    visibility: hidden;
+  }
+  &:hover {
+    .action-panel {
+      visibility: visible;
+    }
+    .screen {
+      height: 100%;
+      width: 100%;
+      top: 0;
+      pointer-events: none;
+      position: absolute;
+      visibility: visible;
+      border: 3px dashed darken($clr5, 5%);
+      transition: all 0.1s;
+    }
+  }
+}
+
+// .wap-preview.dark-theme {
+//   background-color: $clr6;
+//   color: $clr5;
+// }

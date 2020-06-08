@@ -1,0 +1,427 @@
+{
+  "_id": {
+    "$oid": "5e831bd0f99db269b4e9910b"
+  },
+  "title": "test",
+  "imgUrl": "http://res.cloudinary.com/omer1234/image/upload/v1585648793/cnd5ooolug1yjuuvq8o2.png",
+  "theme": {
+    "isTrusted": true
+  },
+  "style": {},
+  "cmps": [
+    {
+      "id": "cmp100",
+      "type": "app-nav",
+      "style": {},
+      "subClass": "",
+      "children": [
+        {
+          "id": "log1zxcv",
+          "type": "h1",
+          "txt": "Dr. Mark",
+          "style": {}
+        },
+        {
+          "id": "lin12az",
+          "type": "a",
+          "to": "app-header",
+          "txt": "Home",
+          "style": {}
+        },
+        {
+          "id": "lin16aq",
+          "type": "a",
+          "to": "app-contact-us",
+          "txt": "Contact",
+          "style": {}
+        },
+        {
+          "id": "lin1vraz",
+          "type": "a",
+          "to": "app-article",
+          "txt": "About",
+          "style": {}
+        }
+      ]
+    },
+    {
+      "id": "cmpa1023121eda1",
+      "type": "layout-2-columns",
+      "style": {
+        "letterSpacing": "0px"
+      },
+      "subClass": "",
+      "children": [
+        {
+          "id": "cmp1sda03",
+          "type": "app-article",
+          "style": {},
+          "subClass": "",
+          "children": [
+            {
+              "id": "yldordssac1a",
+              "type": "p",
+              "txt": "Pet Care",
+              "style": {}
+            },
+            {
+              "id": "xr4g2esacasc1p",
+              "type": "p",
+              "txt": "House Call Veterinarian",
+              "style": {}
+            },
+            {
+              "id": "qowimcjvn",
+              "type": "button",
+              "txt": "Schedule a visit",
+              "style": {}
+            }
+          ]
+        },
+        {
+          "id": "uQvGV",
+          "type": "img",
+          "imgUrl": "https://static.wixstatic.com/media/84770f_346b425b1fe54554a98a4425fa8333cb~mv2_d_3760_3760_s_4_2.jpg/v1/fill/w_479,h_479,al_c,q_80,usm_0.66_1.00_0.01/84770f_346b425b1fe54554a98a4425fa8333cb~mv2_d_3760_3760_s_4_2.webp",
+          "style": {}
+        }
+      ]
+    },
+    {
+      "id": "cmpa103",
+      "type": "layout-2-columns",
+      "style": {},
+      "subClass": "",
+      "children": [
+        {
+          "id": "haz10ofvm",
+          "type": "img",
+          "imgUrl": "https://static.wixstatic.com/media/913019_83c782f7ab6943f9a5d3f0864a18ad0e~mv2_d_4186_4236_s_4_2.jpg/v1/crop/x_594,y_530,w_2934,h_2935/fill/w_416,h_410,al_c,q_80,usm_0.66_1.00_0.01/913019_83c782f7ab6943f9a5d3f0864a18ad0e~mv2_d_4186_4236_s_4_2.webp",
+          "style": {}
+        },
+        {
+          "id": "cmp103",
+          "type": "app-article",
+          "style": {},
+          "subClass": "",
+          "children": [
+            {
+              "id": "yldor1a",
+              "type": "p",
+              "txt": "About Me",
+              "style": {}
+            },
+            {
+              "id": "xr4g2e1p",
+              "type": "p",
+              "txt": "Article sub title",
+              "style": {}
+            },
+            {
+              "id": "q0aewg2a",
+              "type": "p",
+              "txt": "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.",
+              "style": {
+                "letterSpacing": "0px"
+              }
+            },
+            {
+              "id": "avjuem1",
+              "type": "button",
+              "txt": "READ MORE",
+              "style": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cmp124d19",
+      "type": "layout-3-columns",
+      "style": {
+        "letterSpacing": "0px"
+      },
+      "subClass": "",
+      "children": [
+        {
+          "id": "orkmgjq00z",
+          "type": "app-card",
+          "style": {},
+          "subClass": "",
+          "children": [
+            {
+              "id": "q1edpqa31",
+              "type": "img",
+              "imgUrl": "https://static.wixstatic.com/media/913019_eec6c8edb9594324aff3b39d69eba5a0~mv2_d_3433_3440_s_4_2.jpg/v1/fill/w_210,h_210,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/913019_eec6c8edb9594324aff3b39d69eba5a0~mv2_d_3433_3440_s_4_2.webp",
+              "style": {}
+            },
+            {
+              "id": "tr567312",
+              "type": "p",
+              "txt": "Dental Care",
+              "style": {}
+            },
+            {
+              "id": "tr54sac323",
+              "type": "p",
+              "txt": "Use this area to describe one of your services.",
+              "style": {}
+            },
+            {
+              "id": "sa571a",
+              "type": "button",
+              "txt": "BOOK NOW",
+              "style": {}
+            }
+          ]
+        },
+        {
+          "id": "hAjup",
+          "type": "app-card",
+          "style": {},
+          "subClass": "",
+          "children": [
+            {
+              "id": "RBPom",
+              "type": "img",
+              "imgUrl": "http://res.cloudinary.com/omer1234/image/upload/v1585650632/bun94m68nstrelgzeit1.webp",
+              "style": {}
+            },
+            {
+              "id": "ubWfY",
+              "type": "p",
+              "txt": "24/7 Services",
+              "style": {
+                "letterSpacing": "0px"
+              },
+              "imgUrl": "http://res.cloudinary.com/omer1234/image/upload/v1585650621/vzpcrcunv04gjjhcownf.webp"
+            },
+            {
+              "id": "wtLQW",
+              "type": "p",
+              "txt": "Use this area to describe one of your services.",
+              "style": {}
+            },
+            {
+              "id": "9JuAl",
+              "type": "button",
+              "txt": "More Info",
+              "style": {}
+            }
+          ]
+        },
+        {
+          "id": "qa78cv",
+          "type": "app-card",
+          "style": {},
+          "subClass": "",
+          "children": [
+            {
+              "id": "s24511a",
+              "type": "img",
+              "imgUrl": "https://static.wixstatic.com/media/913019_7adb126a7762473089133c2aad36d2bb~mv2_d_4800_4800_s_4_2.jpg/v1/fill/w_210,h_210,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01/913019_7adb126a7762473089133c2aad36d2bb~mv2_d_4800_4800_s_4_2.webp",
+              "style": {}
+            },
+            {
+              "id": "tr54zzweq2",
+              "type": "p",
+              "txt": "Grooming",
+              "style": {}
+            },
+            {
+              "id": "qaotr12zre",
+              "type": "p",
+              "txt": "Use this area to describe one of your services.",
+              "style": {}
+            },
+            {
+              "id": "qsdflv23",
+              "type": "button",
+              "txt": "MORE INFO",
+              "style": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "UGaDO",
+      "type": "app-gallery",
+      "style": {
+        "letterSpacing": "0px"
+      },
+      "subClass": "",
+      "children": [
+        {
+          "id": "reSDe",
+          "type": "img",
+          "imgUrl": "https://www.vetsure.com/wp-content/uploads/2017/08/Vet-dog-2.jpeg",
+          "style": {}
+        },
+        {
+          "id": "BiGDp",
+          "type": "img",
+          "imgUrl": "https://4.bp.blogspot.com/-5jECXwTg6iA/XLdmkDDx3OI/AAAAAAAAEfc/hUsg50qNBewqJu_8lhRO3cT5ldlDuxcQgCLcBGAs/s1600/vet-help-dog.jpg",
+          "style": {}
+        },
+        {
+          "id": "lE2IK",
+          "type": "img",
+          "imgUrl": "https://www.barcelona-metropolitan.com/downloads/29395/download/female-vet-with-shepherd-dog.jpg?cb=bf4e02636775584de874be1e3bc03126&w=1024",
+          "style": {}
+        },
+        {
+          "id": "4beW5",
+          "type": "img",
+          "imgUrl": "https://www.nhah.com/storage/app/media/Pet_emergencies.jpg",
+          "style": {}
+        },
+        {
+          "id": "4nsXG",
+          "type": "img",
+          "imgUrl": "https://www.thesprucepets.com/thmb/YUljVq3q0JFibvyjEMS8ZcjToFY=/3867x2175/smart/filters:no_upscale()/vetandasst-family-Robert-Daly-Caiaimage-GettyImages-164853660-56a26b645f9b58b7d0ca07fc.jpg",
+          "style": {}
+        },
+        {
+          "id": "BvT46",
+          "type": "img",
+          "imgUrl": "https://media.glassdoor.com/l/89/62/64/f1/veterianarians-use-thrive-s-technologies-to-practice-better-medicine.jpg",
+          "style": {}
+        }
+      ]
+    },
+    {
+      "id": "cmp109",
+      "type": "layout-3-columns",
+      "style": {},
+      "subClass": "",
+      "children": [
+        {
+          "id": "cmp103",
+          "type": "app-article",
+          "style": {},
+          "subClass": "",
+          "children": [
+            {
+              "id": "akvm3ta14",
+              "type": "p",
+              "txt": "Very Professional",
+              "style": {}
+            },
+            {
+              "id": "lookmnq31anf",
+              "type": "p",
+              "txt": "Im a testimonial. Click to edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.”",
+              "style": {}
+            },
+            {
+              "id": "akakmvxzzxck",
+              "type": "p",
+              "txt": "Daria Cowan",
+              "style": {}
+            }
+          ]
+        },
+        {
+          "id": "cmp1ope3",
+          "type": "app-article",
+          "style": {},
+          "subClass": "",
+          "children": [
+            {
+              "id": "vgyvkvhc",
+              "type": "p",
+              "txt": "Great Service",
+              "style": {}
+            },
+            {
+              "id": "zuymlkqw",
+              "type": "p",
+              "txt": "Im a testimonial. Click to edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.”",
+              "style": {}
+            },
+            {
+              "id": "uyetnmvcxa",
+              "type": "p",
+              "txt": "Tom Rankin",
+              "style": {}
+            }
+          ]
+        },
+        {
+          "id": "cmp13rt3",
+          "type": "app-article",
+          "style": {},
+          "subClass": "",
+          "children": [
+            {
+              "id": "qrllkgnnbma1",
+              "type": "p",
+              "txt": "Kind & Loving",
+              "style": {}
+            },
+            {
+              "id": "advzxq1234",
+              "type": "p",
+              "txt": "Im a testimonial. Click to edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.”",
+              "style": {}
+            },
+            {
+              "id": "akmqiq",
+              "type": "p",
+              "txt": "Eva Kendall",
+              "style": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2K3p8",
+      "type": "app-contact",
+      "style": {
+        "letterSpacing": "0px"
+      },
+      "subClass": "",
+      "children": [
+        {
+          "id": "xmERF",
+          "type": "app-article",
+          "style": {},
+          "subClass": "",
+          "children": [
+            {
+              "id": "Fx80a",
+              "type": "p",
+              "txt": "Contact",
+              "style": {}
+            },
+            {
+              "id": "Lx2gu",
+              "type": "p",
+              "txt": "Tel Aviv Bacher 4",
+              "style": {}
+            },
+            {
+              "id": "a1zOC",
+              "type": "p",
+              "txt": "123-456-7890",
+              "style": {}
+            },
+            {
+              "id": "JeSbr",
+              "type": "p",
+              "txt": "gizmo@gizmo.com",
+              "style": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "form12zdf",
+      "type": "app-form",
+      "style": {},
+      "txt": ""
+    }
+  ]
+}

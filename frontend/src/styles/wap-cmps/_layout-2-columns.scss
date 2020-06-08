@@ -1,0 +1,65 @@
+.layout-2-columns {
+  @include for-wide-layout {
+    flex-direction: column;
+  }
+  @include for-normal-layout {
+    flex-direction: column;
+  }
+  @include for-narrow-layout {
+    flex-direction: column;
+  }
+
+  &.pet-theme {
+    background-color: $clr11;
+    height: 80vh;
+    padding-bottom: 50px;
+    div {
+      flex-wrap: wrap;
+    }
+    img {
+      width: 420px;
+      border-radius: 999px;
+    }
+    .app-article {
+      :first-child {
+        font-size: rem(62px);
+        font-family: WorkSansSemiBold, sans-serif;
+        font-weight: bold;
+        letter-spacing: 0;
+      }
+      p {
+        font-size: rem(14px);
+        font-family: WorkSansExtraLight, sans-serif;
+        font-weight: bold;
+        color: $clr12;
+        letter-spacing: 0.04em;
+      }
+      :last-child {
+        margin-top: 30px;
+      }
+      button {
+        font-size: rem(14px);
+        background-color: $clr12;
+        padding: 10px 20px;
+        margin-bottom: 25px;
+        color: $clr11;
+        border: none;
+        text-transform: uppercase;
+        transition: .3s;
+        &:hover {
+          background-color: lighten($clr12, 10%);
+          cursor: pointer;
+        }
+      }
+    }
+    @media only screen and (max-width: 1260px) {
+      height: auto;
+      padding-bottom: 50px;
+    }
+    @media only screen and (max-width: 1130px) {
+      img {
+        margin-top: 20px;
+      }
+    }
+  }
+}

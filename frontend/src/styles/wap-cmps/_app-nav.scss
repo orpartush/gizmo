@@ -1,0 +1,190 @@
+.app-nav {
+  p {
+    margin: 0;
+  }
+  .logo {
+    font-family: Lobster, sans-serif;
+    margin-left: rem(50px);
+  }
+
+  .nav-links {
+    margin-left: auto;
+    li {
+      font-weight: bold;
+      margin-right: rem(50px);
+      a:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .hamburger-menu {
+    margin: 0 30px;
+    position: relative;
+    top: 0;
+
+    transform: translate(-100%, 0);
+    // visibility: hidden;
+    display: none;
+  }
+
+  @media only screen and (max-width: $buson-break-wide) {
+    .nav-links {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 0;
+      display: none;
+      // transform: translate(100%, 0);
+      width: 100%;
+      height: 100vh;
+      transition: 0.3s;
+      flex-direction: column;
+      justify-content: flex-start;
+      li {
+        padding: rem(10px);
+        margin: 0;
+        &:first-child {
+          margin: 0;
+          margin-top: rem(75px);
+        }
+        a {
+          margin: 0;
+          padding: 20px 0;
+          font-size: 3rem;
+          font-weight: bold;
+          transition: 0.3s;
+        }
+      }
+    }
+    .menu-open {
+      display: inherit;
+      // position: fixed;
+      transform: translate(0, 0);
+      box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.7);
+    }
+    .hamburger-menu {
+      background-color: transparent;
+      z-index: 2;
+      display: block;
+      font-size: 2rem;
+      transition: 0.5s;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  //THEMES
+
+  &.buson-theme {
+    box-shadow: inset 0 -2px 6px #e2e2e2;
+    height: rem(100px);
+    > * {
+      font-family: Poppins, "sans-serif";
+      color: $clr3;
+    }
+    .logo {
+      margin-bottom: 0;
+      font-size: rem(42px);
+      font-family: PoppinsBold, "sans-serif";
+      &::after {
+        content: ".";
+        font-family: PoppinsBold, "sans-serif";
+        color: $clr4;
+      }
+    }
+    li {
+      a {
+        color: $clr3;
+        font-size: rem(14px);
+        transition: 0.3s;
+        text-transform: uppercase;
+        &:hover {
+          color: $clr4;
+        }
+      }
+    }
+    @media only screen and (max-width: $buson-break-wide) {
+      .nav-links {
+        background-color: $clr1;
+        li > a {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+  &.icy-theme {
+    height: rem(90px);
+    background-color: $clr7;
+    * {
+      color: $clr9;
+      font-family: Raleway, sans-serif;
+    }
+    .logo {
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-size: rem(22px);
+      margin-bottom: 0;
+      &:after {
+        content: " Consulting";
+        color: $clr8;
+      }
+    }
+    li {
+      a {
+        font-weight: 400;
+        font-size: rem(13px);
+      }
+    }
+    @media only screen and (max-width: $buson-break-wide) {
+      .nav-links {
+        background-color: $clr7;
+        li > a {
+          font-family: Raleway, sans-serif;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  &.pet-theme {
+    background-size: cover;
+    flex-direction: row;
+    height: rem(105px);
+    background-color: $clr11;
+    .txt-container {
+      width: 100vw;
+    }
+    * {
+      color: $clr12;
+      font-family: WorkSansExtraLight, sans-serif;
+    }
+    .logo {
+      font-size: rem(25px);
+      font-weight: bold;
+      font-family: WorkSansSemiBold, sans-serif;
+      margin-bottom: 0;
+      &:before {
+        font-family: "Font Awesome 5 Free";
+        margin-right: 5px;
+        font-weight: 900;
+        content: " \f1b0 ";
+      }
+    }
+    li {
+      a {
+        font-size: rem(14px);
+      }
+    }
+    @media only screen and (max-width: $buson-break-wide) {
+      .nav-links {
+        background-color: $clr11;
+        li > a {
+          font-family: Raleway, sans-serif;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

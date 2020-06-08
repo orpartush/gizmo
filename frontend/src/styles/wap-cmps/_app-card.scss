@@ -1,0 +1,148 @@
+.app-card {
+  margin: 0 auto;
+  margin-top: rem(20px);
+  text-align: center;
+  flex-wrap: wrap;
+  width: 25%;
+  font-size: 0.9rem;
+
+  h3 {
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: rem(10px);
+  }
+
+  img {
+    width: 100%;
+  }
+
+  button {
+    margin-top: 10px;
+  }
+
+  //THEMES
+
+  &.icy-theme {
+    background-color: $clr7;
+    color: $clr9;
+    width: 25%;
+    margin-bottom: 20px;
+    text-align: center;
+
+    p {
+      font-family: Raleway, sans-serif;
+      font-weight: 500;
+      max-width: 90%;
+      padding: 8px;
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    button {
+      margin-bottom: 20px;
+      padding: 8px;
+      color: $clr9;
+      background-color: $clr10;
+      border: none;
+      font-size: 1rem;
+      padding: 10px 20px;
+      transition: 0.3s;
+      &:hover {
+        background-color: $clr9;
+        color: $clr10;
+      }
+    }
+    @media only screen and (max-width: 1300px) {
+      width: 50%;
+    }
+    @media only screen and (max-width: 950px) {
+      width: 60%;
+    }
+    @media only screen and (max-width: 810px) {
+      width: 80%;
+    }
+  }
+
+  &.pet-theme {
+    color: $clr12;
+    width: 25%;
+    margin-bottom: 20px;
+    text-align: center;
+    * {
+      font-family: WorkSansExtraLight, sans-serif;
+      font-weight: bold;
+      line-height: 1.5;
+      font-size: 1rem;
+      text-overflow: ellipsis;
+      word-break: break-word;
+    }
+    img {
+      border-radius: 999px;
+      margin-bottom: 25px;
+    }
+    button {
+      font-size: rem(14px);
+      background-color: $clr12;
+      padding: 10px 20px;
+      color: $clr11;
+      border: none;
+      text-transform: uppercase;
+      transition: 0.3s;
+      &:hover {
+        background-color: lighten($clr12, 10%);
+        cursor: pointer;
+      }
+    }
+    @media only screen and (max-width: 1130px) {
+      p {
+        margin-top: 0;
+      }
+    }
+  }
+}
+// @media only screen and (max-width: )
+// }
+
+// .app-card.light-and-shiny {
+//   filter: drop-shadow(0 0 0.75rem rgb(138, 138, 138));
+//   background-color: $clr1;
+//   color: $clr2;
+// }
+
+// .app-card.dark-theme {
+//   color: $clr5;
+//   background-color: darken($clr6, 10%);
+//   filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+//   button {
+//     @include for-dark-button;
+//     font-weight: bold;
+//   }
+// }
+
+// MEDIA QUERIES
+
+// @include for-wide-layout {
+//   .app-card {
+//     width: 33%;
+//   }
+// }
+// @include for-normal-layout {
+//   .app-card {
+//     width: 60%;
+//     button {
+//       @include for-responsive-btn;
+//     }
+//   }
+// }
+// @include for-narrow-layout {
+//   .app-card {
+//     margin-top: rem(15px);
+//     width: 90%;
+//     button {
+//       @include for-responsive-btn;
+//     }
+//   }
+// }

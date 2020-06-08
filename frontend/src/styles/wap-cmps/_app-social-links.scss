@@ -1,0 +1,33 @@
+.app-social-links {
+  padding: rem(20px);
+  > * {
+    padding: rem(5px);
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &.buson-theme {
+    * {
+      // background-color: $clr1;
+      color: $clr2;
+    }
+  }
+  &.icy-theme {
+    * {
+      // background-color: $clr7;
+      color: $clr9;
+    }
+  }
+}
+
+.app-social-links.light-and-shiny {
+  > * {
+    color: $clr9;
+  }
+}
+.app-social-links.dark-theme {
+  > * {
+    color: $clr5;
+  }
+}

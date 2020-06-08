@@ -1,0 +1,180 @@
+.app-contact-us {
+  font-family: Lato, sans-serif;
+  font-size: rem(14px);
+
+  p {
+    margin: 0;
+  }
+
+  .info {
+    hr {
+      margin-top: rem(40px);
+      width: rem(50px);
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+
+    .adress-info {
+      margin: rem(40px) 0;
+    }
+  }
+
+  form {
+    * {
+      margin-top: 5px;
+    }
+
+    label {
+      text-align: start;
+      font-size: rem(14px);
+
+      * {
+        margin-top: 5px;
+      }
+
+      input {
+        padding: 5px;
+        border: none;
+        outline: none;
+
+        &::placeholder {
+          font-size: rem(12px);
+        }
+      }
+
+      textarea {
+        padding: 5px;
+        color: $clr2;
+        border: 1px solid $clr2;
+        outline: none;
+        resize: none;
+
+        &:hover {
+          background-color: darken($clr1, 10%);
+        }
+      }
+    }
+  }
+
+  button {
+    margin-left: auto;
+    width: fit-content;
+    padding: 5px 20px;
+  }
+
+  &.buson-theme {
+    background-color: $clr3;
+    color: $clr1;
+    height: 70vh;
+    align-items: center;
+    * {
+      font-family: Poppins, sans-serif;
+    }
+    form {
+      width: fit-content;
+      input,
+      textarea {
+        border-radius: 5px;
+      }
+      input {
+        padding: 10px;
+      }
+      button {
+        @include for-buson-btn;
+      }
+    }
+    @media only screen and (max-width: $buson-break-wide) {
+      height: auto;
+      div {
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+  }
+
+  &.icy-theme {
+    height: 60vh;
+    align-items: center;
+    background-color: $clr7;
+    color: $clr9;
+    button {
+      margin-bottom: 20px;
+      padding: 8px;
+      color: $clr9;
+      background-color: $clr10;
+      border: none;
+      font-size: 1rem;
+      padding: 10px 20px;
+      transition: 0.3s;
+      &:hover {
+        background-color: $clr9;
+        color: $clr10;
+      }
+    }
+  }
+
+  &.pet-theme {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $clr12;
+    height: 60vh;
+    color: $clr11;
+    div {
+      flex-direction: column;
+    }
+    form {
+      margin: 0 auto;
+      width: 50%;
+      * {
+        border: none;
+      }
+      label {
+        margin: 2.5px;
+        padding: 5px;
+        input,textarea {
+          font-family: WorkSansExtraLight, sans-serif;
+          font-weight: bold;
+          letter-spacing: 0.04em;
+          color: #fff;
+          background-color: $clr12;
+          border-bottom: 1px solid #fff;
+          &::placeholder {
+            text-align: center;
+            color: $clr11;
+          }
+        }
+      }
+      button {
+        margin: 10px auto;
+        width: 100%;
+        background-color: $clr12;
+        color: $clr11;
+        transition: 0.3s;
+        &:hover {
+          background-color: $clr11;
+          color: $clr12;
+        }
+      }
+      // background-color: red;
+      // label {
+      //   width: 60%;
+      // }
+    }
+  }
+
+  //info section
+  .app-article.buson-theme.info {
+    margin: 0;
+    border: none;
+    :first-child {
+      font-size: 2rem;
+    }
+    p {
+      background-color: $clr3;
+      text-align: center;
+    }
+  }
+}

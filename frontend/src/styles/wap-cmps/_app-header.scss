@@ -1,0 +1,124 @@
+.app-header {
+  padding: 0.5rem;
+  word-break: break-all;
+  min-height: 50vh;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 460px;
+
+  .title {
+    font-weight: bold;
+    font-size: 6rem;
+    margin-bottom: 10px;
+  }
+
+  .sub-title {
+    margin: 0;
+  }
+
+  button {
+    width: rem(200px);
+    font-size: 1.5rem;
+  }
+
+  &.buson-theme {
+    min-height: 78vh;
+    align-items: flex-start;
+    color: $clr3;
+    .title,
+    button {
+      margin: 0;
+      margin-left: rem(40px);
+    }
+    .title {
+      font-family: PoppinsBold, "sans-serif";
+    }
+    button {
+      @include for-buson-btn;
+      padding: 20px;
+    }
+    @include for-theme-wide-layout {
+      .title {
+        font-size: 4rem;
+      }
+      button {
+        padding: 10px;
+      }
+    }
+    @media only screen and (max-width: $buson-break-normal) {
+      .title {
+        font-size: 3rem;
+      }
+      button {
+        padding: 10px;
+      }
+    }
+  }
+
+  &.icy-theme {
+    min-height: 65vh;
+    .txt-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      // align-items: center;
+      min-height: 150px;
+      width: 80%;
+      text-align: center;
+      padding: 15px;
+      color: $clr7;
+      background-color: rgba(255, 255, 255, 0.7);
+
+      * {
+        font-family: Raleway, sans-serif;
+      }
+
+      p {
+        font-size: rem(18px);
+        font-weight: 100;
+        min-width: 100%;
+        margin: 0;
+        align-self: center;
+      }
+      h1 {
+        margin: 0;
+        font-size: rem(60px);
+      }
+    }
+    @media only screen and (max-width: 1260px) {
+      .txt-container {
+        h1 {
+          font-size: rem(50px);
+        }
+        p {
+          font-size: rem(14px);
+        }
+      }
+    }
+    @media only screen and (max-width: 1110px) {
+      .txt-container {
+        h1 {
+          font-size: rem(35px);
+          font-weight: bold;
+        }
+        p {
+          font-size: rem(12px);
+          font-weight: bold;
+        }
+      }
+    }
+    @media only screen and (max-width: 920px) {
+      .txt-container {
+        h1 {
+          font-size: rem(25px);
+        }
+        p {
+          font-weight: bold;
+          font-size: rem(12px);
+        }
+      }
+    }
+  }
+}

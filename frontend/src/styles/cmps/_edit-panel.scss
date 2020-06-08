@@ -1,0 +1,149 @@
+.edit-panel {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+
+  .collapse-item {
+    padding: 0 20px;
+    font-size: 1rem;
+  }
+
+  .wap-prefs-container {
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: start;
+    padding: rem(20px);
+    
+    div {
+      padding: rem(10px);
+      p {
+        width: fit-content;
+        margin: 0;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .prefs-enter,
+  .prefs-leave-to {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .prefs-enter-active,
+  .prefs-leave-active {
+    transition: all 0.2s;
+  }
+
+  .wap-title-theme {
+    * {
+      color: $clr2;
+    }
+    .themes {
+      p {
+        padding-right: 0;
+      }
+      div {
+        padding: 0;
+        button {
+          // @include for-light-button;
+          margin: 2.5px;
+        }
+        :last-child {
+          @include for-dark-button;
+        }
+      }
+    }
+    .title {
+      display: flex;
+      align-items: center;
+      p {
+        padding-right: 0;
+      }
+
+      button {
+        // @include for-light-button;
+        font-weight: bold;
+        background-color: $clr4;
+        color: $clr2;
+        transition: 0.3s;
+        margin: 2.5px;
+        margin-bottom: 10px;
+        &:hover {
+          color: $clr4;
+          background-color: $clr2;
+        }
+      }
+    }
+    .wap-info {
+      text-transform: capitalize;
+      margin-bottom: 20px;
+    }
+  }
+  .upload-img-container {
+    padding: 10px;
+    [type="file"] {
+      height: 0;
+      overflow: hidden;
+      width: 0;
+    }
+    [type="file"] + label {
+      background: #f15d22;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: inherit;
+      font-weight: 600;
+      // margin-bottom: 1rem;
+      outline: none;
+      padding: 10px 25px;
+      position: relative;
+      transition: all 0.3s;
+      vertical-align: middle;
+
+      &.btn-3 {
+        // @include for-light-button;
+        overflow: hidden;
+        margin-right: 10px;
+
+        span {
+          display: inline-block;
+          height: 100%;
+          transition: all 0.3s;
+          width: 100%;
+        }
+
+        &::before {
+          color: $clr2;
+          content: "\f093";
+          font-family: "Font Awesome 5 Free";
+          font-size: 100%;
+          height: 100%;
+          left: rem(43px);
+          line-height: 2.6;
+          position: absolute;
+          top: -180%;
+          transition: all 0.3s;
+          width: 100%;
+        }
+
+        &:hover {
+          background-color: $clr1;
+
+          span {
+            transform: translateY(300%);
+          }
+          &::before {
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+  .img-preview {
+    padding: 20px;
+  }
+}

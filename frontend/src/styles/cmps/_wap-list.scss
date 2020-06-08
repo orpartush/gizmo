@@ -1,0 +1,21 @@
+.wap-list {
+  margin-bottom: 30px;
+
+  .wap-preview {
+    border-radius: 4px 4px 0 0;
+    cursor: pointer;
+  }
+  .wap-card {
+    position: relative;
+    &:hover {
+      .template-action {
+        background-color: hsla(0, 0%, 100%, 0.86);
+        border-left: 1px solid hsla(0, 0%, 100%, 0.86);
+        border-right: 1px solid hsla(0, 0%, 100%, 0.86);
+        transition: .2s ease-out;
+        border-radius: 4px 4px 0 0;
+        visibility: visible;
+      }
+    }
+  }
+}

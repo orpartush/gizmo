@@ -1,0 +1,113 @@
+/* Lign and shiny mixins */
+
+@mixin for-buson-btn {
+  font-family: Poppins, sans-serif;
+  color: $clr1;
+  background-color: $clr4;
+  border: none;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  transition: .3s;
+  &:hover {
+    background-color: lighten($clr4, 5%);
+  }
+}
+
+@mixin for-dark-button {
+  color: $clr6;
+  background-color: $clr5;
+  border: none;
+  padding: 10px;
+  // margin-bottom: 15px;
+  border: 2px solid $clr5;
+  transition: .3s;
+  
+  &:hover {
+    color: $clr5;
+    background-color: $clr6;
+    border: 2px solid $clr5;
+  }
+  
+}
+
+@mixin for-responsive-btn {
+  margin: 5px 0 10px;
+  font-size: 0.8rem;
+}
+
+
+/* Media queries Breakpoint mixins */
+
+@mixin for-narrow-layout {
+  @media (max-width: $break-narrow) {
+    @content;
+  }
+}
+
+@mixin for-normal-layout {
+  @media (max-width: $break-normal) {
+    @content;
+  }
+}
+
+@mixin for-wide-layout {
+  @media (min-width: $break-normal) and (max-width: $break-wide) {
+    @content;
+  }
+}
+
+/*Media queries for THEMES*/
+  @mixin for-theme-narrow-layout {
+    @media (max-width: $buson-break-narrow) {
+      @content;
+    }
+  }
+  
+  @mixin for-theme-normal-layout {
+    @media (max-width: $buson-break-normal) {
+      @content;
+    }
+  }
+  
+  @mixin for-theme-wide-layout {
+    @media (min-width: $buson-break-normal) and (max-width: $buson-break-wide) {
+      @content;
+    }
+  }
+
+
+
+/* Media  Mixins */
+
+//aspect ratio mixin
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+    overflow: hidden;
+    &:before {
+      content: "";
+      display: block;
+      width: 100%;
+      padding-top: ($height / $width) * 100%;
+    }
+    > * {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }  
+    > img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  // Mixin for removing hover efects on iphone screen
+  @mixin hover-supported {    
+    @media not all and (pointer: coarse) {
+        &:hover {
+            @content;
+        }
+    }
+  }

@@ -1,0 +1,72 @@
+.app-footer {
+  // height: 100px;
+  text-transform: lowercase;
+  div {
+    span {
+      height: fit-content;
+      margin-right: 5px;
+    }
+  }
+
+  // .social-links {
+  //   * {
+  //     margin: 5px;
+  //     font-size: 1.3rem;
+  //     &:hover {
+  //       cursor: pointer;
+  //     }
+  //   }
+  // }
+
+  &.buson-theme {
+    height: 30vh;
+    background-color: $clr1;
+    p {
+      margin: 0;
+    }
+    .social-links {
+      * {
+        color: $clr1;
+      }
+    }
+  }
+  &.icy-theme {
+    height: 10vh;
+    color: $clr9;
+    background-color: $clr7;
+    p {
+      margin: 0;
+    }
+    // .social-links {
+      // * {
+      //   color: $clr9;
+      // }
+    // }
+  }
+}
+
+// .app-footer.light-and-shiny {
+//   background-color: $clr2;
+
+//   > * {
+//     color: $clr1;
+//   }
+
+//   a {
+//     :hover {
+//       color: darken($clr1, 20%);
+//     }
+//   }
+// }
+
+// .app-footer.dark-theme {
+//   background-color: $clr6;
+//   > * {
+//     color: $clr5;
+//   }
+//   a {
+//     :hover {
+//       color: darken($clr5, 20%);
+//     }
+//   }
+// }

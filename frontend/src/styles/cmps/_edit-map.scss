@@ -1,0 +1,27 @@
+.edit-map {
+  padding-bottom: 10px;
+  text-align: left;
+  
+  .el-input, .el-input--small {
+    text-align: center;
+    .el-input__inner {
+      margin: 0;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+  input {
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 0.877rem;
+  }
+  .map-config{
+    margin: 0 auto;
+    width: 80%;
+  }
+  .location{
+    margin-top: 15px;
+  }
+}
