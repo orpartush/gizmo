@@ -1,6 +1,7 @@
 # Gizmo-Builder
 
 Gizmo allow you to build your own responsive website.
+Main technologies: Vue, Vuex, JavaScript, SCSS, Node.js, MongoDB.
 
 # Live Demo
 http://gizmo-builder.herokuapp.com/
